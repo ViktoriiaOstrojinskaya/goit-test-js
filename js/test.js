@@ -1,30 +1,12 @@
-function getDiscount(totalSpent) {
-  const BASE_DISCOUNT = 0;
-  const BRONZE_DISCOUNT = 0.02;
-  const SILVER_DISCOUNT = 0.05;
-  const GOLD_DISCOUNT = 0.1;
-  totalSpent = 5000;
+const numbers = [1,2,3,1,2,17,19]
 
-  let discount;
-  // Change code below this line
-  switch (totalSpent) {
-    case totalSpent >= 5000:
-      discount = GOLD_DISCOUNT;
-      break;
-
-    case totalSpent >= 2000 && totalSpent < 5000:
-      discount = SILVER_DISCOUNT;
-      break;
-
-    case totalSpent >= 5000 && totalSpent < 2000:
-      discount = BRONZE_DISCOUNT;
-      break;
-
-    case totalSpent < 5000:
-      discount = BASE_DISCOUNT;
-  }
-  // Change code above this line
-  return discount;
+function getCommonElements(arr) {
+    for (let i=0; i < arr.length; i +=1){
+        const idx = arr.indexOf(arr[i], i+1);
+        if (idx !== -1){
+            arr.splice(idx.1)
+        }
+    }
+    return arr;
 }
-
-console.log(totalSpent);
+console.log(getCommonElements(numbers));
