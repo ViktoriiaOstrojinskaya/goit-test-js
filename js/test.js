@@ -23,13 +23,13 @@
 // }
 // console.log(getCommonElements(numbers));
 
-const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-function removeFirstTwo(list) {
-  // Змініть код лише під цим рядком
-  const arr = [...list];
-  // Змініть код лише над цим рядком
-  return arr;
-}
-const arr = removeFirstTwo(source);
-console.log(arr);
-console.log(source);
+// const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function removeFirstTwo(list) {
+//   // Змініть код лише під цим рядком
+//   const arr = [...list];
+//   // Змініть код лише над цим рядком
+//   return arr;
+// }
+// const arr = removeFirstTwo(source);
+// console.log(arr);
+// console.log(source);
